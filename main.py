@@ -24,7 +24,9 @@ def load_recipe(recipe):
 
 
 if __name__ == "__main__":
-    RECIPE_JSON = '{"title": "Spaghetti Bolognese", "ingredients": {"Spaghetti": 400, "Tomato Sauce": 300, "Minced Meat": 500}, "servings": 4}'
+    RECIPE_JSON = ('{"title": "Spaghetti Bolognese", '
+                   '"ingredients": {"Spaghetti": 400, "Tomato Sauce": 300, "Minced Meat": 500},'
+                   ' "servings": 4}')
     recipe_loaded = load_recipe(RECIPE_JSON)
     adjusted_recipe = adjust_recipe(recipe_loaded, 7)
     print(adjusted_recipe)
